@@ -59,6 +59,16 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MCHub.Data\MCHub.Data.csproj">
+      <Project>{0b00e8c0-3c25-4df5-a547-1107a6499808}</Project>
+      <Name>MCHub.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MCHub\MCHub.Domain.csproj">
+      <Project>{a929a4a1-22c4-4812-bece-d3a381153202}</Project>
+      <Name>MCHub.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

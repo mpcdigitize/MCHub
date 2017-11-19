@@ -1,0 +1,1 @@
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub\obj\Debug\MCHub.Domain.csprojResolveAssemblyReference.cache

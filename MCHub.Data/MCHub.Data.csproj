@@ -66,6 +66,11 @@
   <ItemGroup>
     <Compile Include="AppContext.cs" />
     <Compile Include="AppRepo.cs" />
+    <Compile Include="Model\MediaItem.cs" />
+    <Compile Include="Model\MediaItemDetail.cs" />
+    <Compile Include="Model\MetadataItem.cs" />
+    <Compile Include="Model\MetadataItemView.cs" />
+    <Compile Include="Model\RecordingDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

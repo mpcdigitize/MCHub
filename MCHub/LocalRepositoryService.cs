@@ -1,9 +1,10 @@
-﻿using System;
+﻿using MCHub.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using WMCHub.Data;
 
 namespace MCHub
 {
@@ -60,7 +61,7 @@ namespace MCHub
             foreach (var recording in recordings)
             {
 
-                var mediaItem = new MediaItem()
+                var mediaItem = new MCHub.Data.Model.MediaItem()
                 {
                     MediaItemId = recording.WtvRecordingId,
                     FileName = recording.FileName,
@@ -69,7 +70,7 @@ namespace MCHub
                 };
 
 
-                var mediaItemDetail = new MediaItemDetail()
+                var mediaItemDetail = new MCHub.Data.Model.MediaItemDetail()
                 {
                     MediaItemDetailId = Guid.NewGuid(),
                     Size = recording.Size,
@@ -80,7 +81,7 @@ namespace MCHub
                 };
 
 
-                var recordingDetail = new RecordingDetail()
+                var recordingDetail = new MCHub.Data.Model.RecordingDetail()
                 {
                     RecordingDetailId = Guid.NewGuid(),
                     DateReleased  = recording.DateReleased,
@@ -97,7 +98,7 @@ namespace MCHub
                 };
 
 
-                var metadataItem = new MetadataItem()
+                var metadataItem = new MCHub.Data.Model.MetadataItem()
                 {
                     MetadataItemId = Guid.NewGuid(),
                     Title = recording.Title,

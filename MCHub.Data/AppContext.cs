@@ -15,7 +15,7 @@ namespace WMCHub.Data
         public AppContext() : base("name=AttachToMdfStoredInAppFolder")
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<AppContext,
-          Migrations.Configuration>("AttachToMdfStoredInAppFolder"));
+            MCHub.Data.Migrations.Configuration>("AttachToMdfStoredInAppFolder"));
         }
 
 

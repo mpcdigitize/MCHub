@@ -10,3 +10,5 @@ h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\EntityFra
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\EntityFramework.SqlServer.xml
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.dll
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.pdb
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.Migrations.initial.resources
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csproj.GenerateResource.Cache

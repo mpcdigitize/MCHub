@@ -66,6 +66,10 @@
   <ItemGroup>
     <Compile Include="AppContext.cs" />
     <Compile Include="AppRepo.cs" />
+    <Compile Include="Migrations\201711192205231_initial.cs" />
+    <Compile Include="Migrations\201711192205231_initial.Designer.cs">
+      <DependentUpon>201711192205231_initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\MediaItem.cs" />
     <Compile Include="Model\MediaItemDetail.cs" />
@@ -98,6 +102,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>MCHubDatabase.mdf</DependentUpon>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201711192205231_initial.resx">
+      <DependentUpon>201711192205231_initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

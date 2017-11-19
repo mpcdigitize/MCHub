@@ -30,7 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,20 +49,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extensions.cs" />
-    <Compile Include="ILocalRepository.cs" />
-    <Compile Include="IParseWtvMetadataFromFile.cs" />
+    <Compile Include="Extensions\Extensions.cs" />
+    <Compile Include="Interfaces\ILocalRepository.cs" />
+    <Compile Include="Interfaces\IParseWtvMetadataFromFile.cs" />
     <Compile Include="LocalRepositoryService.cs" />
+    <Compile Include="Model\MediaItem.cs" />
+    <Compile Include="Model\MediaItemDetail.cs" />
+    <Compile Include="Model\MetadataItem.cs" />
+    <Compile Include="Model\MetadataItemView.cs" />
+    <Compile Include="Model\RecordingDetail.cs" />
     <Compile Include="Ordinal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RecordingDto.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="ShellParser.cs" />
     <Compile Include="ShellReader.cs" />
-    <Compile Include="test.cs" />
     <Compile Include="WtvRecording.cs" />
     <Compile Include="WtvRecordingBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Enums\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

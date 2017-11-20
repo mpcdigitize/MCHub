@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppService.cs" />
     <Compile Include="Extensions\Extensions.cs" />
     <Compile Include="Interfaces\ILocalRepository.cs" />
     <Compile Include="Interfaces\IParseWtvMetadataFromFile.cs" />

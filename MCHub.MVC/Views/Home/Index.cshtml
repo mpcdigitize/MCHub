@@ -1,0 +1,14 @@
+﻿@model List<MCHub.Data.Model.MediaItem>
+@{
+   // ViewBag.Title = "Index";
+}
+
+<h1>@ViewBag.PeterCreatedThisValue</h1>
+<h1>Sprawdzam</h1>
+<h2>Peter changed this application</h2>
+
+@foreach (var file in Model)
+{
+    <p>@file.FileName - @file.FilePath </p>
+}
+

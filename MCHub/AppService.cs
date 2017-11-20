@@ -14,17 +14,12 @@ namespace MCHub
         public AppService ()
         {
 
-            _repo = new AppRepo;    
+            _repo = new AppRepo();    
         }
 
 
 
-        public static IEnumerable<MediaItem> GetMediaItems()
-        { 
-                
-            return 
-        }
-
+      
 
    }
 }

@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using WMCHub.Data;
 
-namespace MCHub.MVC.Controllers
+namespace MCHub.MVC.Old.Controllers
 {
     public class HomeController : Controller
     {
@@ -20,15 +20,15 @@ namespace MCHub.MVC.Controllers
             var repo = new AppRepo();
 
 
-            var list = repo.GetMetadataItems();
+           var list = repo.GetMetadataItems();
 
-            List<MediaItem> files = context.MediaItems.ToList();
+           // List<MetadataItem> files = context.Me.ToList();
 
             //var cars = HelloModel.GetCars();
 
             //ViewBag.PeterCreatedThisValue = "My value";
 
-            return View(files);
+            return View(list);
         }
     }
 }

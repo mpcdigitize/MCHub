@@ -1,6 +1,3 @@
-h:\my documents\visual studio 2015\Projects\MCHub\MCHub\obj\Debug\MCHub.Domain.csprojResolveAssemblyReference.cache
-h:\my documents\visual studio 2015\Projects\MCHub\MCHub\obj\Debug\Interop.Shell32.dll
-h:\my documents\visual studio 2015\Projects\MCHub\MCHub\obj\Debug\MCHub.Domain.csproj.ResolveComReference.cache
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub\bin\Debug\App_Data\MCHubDatabase.mdf
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub\bin\Debug\App_Data\MCHubDatabase_log.ldf
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub\bin\Debug\MCHub.dll.config
@@ -12,5 +9,8 @@ h:\my documents\visual studio 2015\Projects\MCHub\MCHub\bin\Debug\MCHub.Data.dll
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub\bin\Debug\MCHub.Data.pdb
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub\bin\Debug\EntityFramework.xml
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub\bin\Debug\EntityFramework.SqlServer.xml
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub\obj\Debug\MCHub.Domain.csprojResolveAssemblyReference.cache
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub\obj\Debug\Interop.Shell32.dll
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub\obj\Debug\MCHub.Domain.csproj.ResolveComReference.cache
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub\obj\Debug\MCHub.dll
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub\obj\Debug\MCHub.pdb

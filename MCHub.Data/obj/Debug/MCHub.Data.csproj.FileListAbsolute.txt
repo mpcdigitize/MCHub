@@ -1,4 +1,3 @@
-h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csprojResolveAssemblyReference.cache
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\App_Data\MCHubDatabase.mdf
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\App_Data\MCHubDatabase_log.ldf
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\MCHub.Data.dll.config
@@ -8,7 +7,7 @@ h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\EntityFra
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\EntityFramework.SqlServer.dll
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\EntityFramework.xml
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\EntityFramework.SqlServer.xml
-h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.dll
-h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.pdb
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.Migrations.initial.resources
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csproj.GenerateResource.Cache
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.dll
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.pdb

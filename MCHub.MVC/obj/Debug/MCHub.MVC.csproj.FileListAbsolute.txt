@@ -11,11 +11,15 @@ h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\roslyn\System.Re
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\roslyn\vbc.exe
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\roslyn\VBCSCompiler.exe
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\roslyn\VBCSCompiler.exe.config
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\App_Data\MCHubDatabase.mdf
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\App_Data\MCHubDatabase_log.ldf
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\MCHub.MVC.dll.config
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\MCHub.MVC.dll
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\MCHub.MVC.pdb
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\EntityFramework.dll
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\EntityFramework.SqlServer.dll
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\MCHub.Data.dll
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\MCHub.dll
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\Microsoft.AI.Agent.Intercept.dll
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\Microsoft.AI.DependencyCollector.dll
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -31,6 +35,8 @@ h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\System.Web.Razor
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\System.Web.Webpages.Deployment.dll
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\System.Web.Webpages.dll
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\System.Web.Webpages.Razor.dll
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\MCHub.Data.pdb
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\MCHub.pdb
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\EntityFramework.xml
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\EntityFramework.SqlServer.xml
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\Microsoft.AI.DependencyCollector.xml
@@ -48,9 +54,3 @@ h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\System.Web.Mvc.x
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\obj\Debug\MCHub.MVC.csprojResolveAssemblyReference.cache
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\obj\Debug\MCHub.MVC.dll
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\obj\Debug\MCHub.MVC.pdb
-h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\App_Data\MCHubDatabase.mdf
-h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\App_Data\MCHubDatabase_log.ldf
-h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\MCHub.Data.dll
-h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\MCHub.dll
-h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\MCHub.Data.pdb
-h:\my documents\visual studio 2015\Projects\MCHub\MCHub.MVC\bin\MCHub.pdb

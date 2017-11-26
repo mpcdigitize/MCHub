@@ -11,3 +11,4 @@ h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Dat
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csproj.GenerateResource.Cache
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.dll
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.pdb
+h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csprojResolveAssemblyReference.cache

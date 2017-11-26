@@ -11,7 +11,7 @@
     @foreach (var file in Model)
     {
 
-        Html.RenderPartial("~/Views/Shared/_MetadataDetail.cshtml", MCHub.Data.Model.MetadataItem);
+        Html.RenderPartial("~/Views/Shared/_MetadataDetail.cshtml", file);
        // <p>@file.Title - @file.Description </p>
     }
 

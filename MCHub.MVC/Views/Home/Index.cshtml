@@ -5,9 +5,15 @@
 
 <h2>Recently Recorded</h2>
 
-@foreach (var file in Model)
-{
-    <p>@file.Title - @file.Description </p>
-}
+
+<div class="row">
+
+    @foreach (var file in Model)
+    {
+
+        Html.RenderPartial("~/Views/Shared/_MetadataDetail.cshtml", MCHub.Data.Model.MetadataItem);
+       // <p>@file.Title - @file.Description </p>
+    }
 
 
+</div>

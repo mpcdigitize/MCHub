@@ -20,7 +20,7 @@ namespace MCHub.MVC.Controllers
             var repo = new AppRepo();
 
 
-            var list = repo.GetIMediaItems();
+            var list = repo.GetMetadataItems();
 
             List<MediaItem> files = context.MediaItems.ToList();
 

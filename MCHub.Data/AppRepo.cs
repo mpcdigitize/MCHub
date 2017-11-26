@@ -20,7 +20,7 @@ namespace WMCHub.Data
         }
 
 
-        public IEnumerable<MediaItem> GetIMediaItems()
+        public IEnumerable<MediaItem> GetMediaItems()
         {
 
             List<MediaItem> list = _context.MediaItems.ToList();
@@ -28,6 +28,17 @@ namespace WMCHub.Data
                 return list;
 
         }
+
+
+        public IEnumerable<MetadataItem> GetMetadataItems()
+        {
+
+            List<MetadataItem> list = _context.MetadataItems.ToList();
+
+            return list;
+
+        }
+
 
     }
 }

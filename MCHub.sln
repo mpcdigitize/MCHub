@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCHub.Data", "MCHub.Data\MC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCHub.Console", "MChub.Console\MCHub.Console.csproj", "{39615CDF-B745-4FAA-989B-4388ABCF32A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCHub.MVC", "MCHub.MVC\MCHub.MVC.csproj", "{81B9C7FB-158E-49E5-9F75-86955B8E411E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCHub.MVC.Old", "MCHub.MVC\MCHub.MVC.Old.csproj", "{81B9C7FB-158E-49E5-9F75-86955B8E411E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

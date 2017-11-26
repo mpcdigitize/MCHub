@@ -1,7 +1,7 @@
 ﻿@model MCHub.Data.Model.MetadataItem
-    <div class="col-md-2 column medtatabox">
-        
-        <a a href="/Home/Detail/"@Model.MetadataItemId><img src="https://image.tmdb.org/t/p/w640/vxuoMW6YBt6UsxvMfRNwRl9LtWS.jpg" class="img-responsive"/></a>
+    <div class="col-lg-3 column medtatabox">      
+        <!-- <a a href="/Home/Detail/"@Model.MetadataItemId><img src="https://image.tmdb.org/t/p/w640/vxuoMW6YBt6UsxvMfRNwRl9LtWS.jpg" class="img-responsive"/></a> -->
+        <a a href="/Home/Detail/" @Model.MetadataItemId><img src="~/Content/Images/walking.jpg" class="img-responsive" /></a>
         <a class="title" a href="/Home/Detail/"@Model.MetadataItemId>@Model.Title</a>
         <div class="description">@Model.Description</div>
     </div>

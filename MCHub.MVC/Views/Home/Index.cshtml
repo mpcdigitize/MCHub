@@ -1,7 +1,13 @@
-﻿
+﻿@model List<MCHub.Data.Model.MediaItem>
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
+
+@foreach (var file in Model)
+{
+    <p>@file.FileName - @file.FilePath </p>
+}
+
 

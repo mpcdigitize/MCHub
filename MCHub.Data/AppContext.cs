@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,8 +14,21 @@ namespace WMCHub.Data
     public class AppContext : DbContext
     {
 
+       
+
         public AppContext() : base("name=AttachToMdfStoredInAppFolder")
         {
+            var moduleName = Path.GetFileName(Process.GetCurrentProcess().MainModule.FileName);
+            var position = moduleName.IndexOf(".");
+            var appName = moduleName.Substring(0, position);
+        
+        var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string relative = @"..\..\App_Data\";
+            string absolute = Path.GetFullPath(Path.Combine(baseDirectory, relative));
+            AppDomain.CurrentDomain.SetData("DataDirectory", absolute);
+
+            Console.WriteLine(appName + relative);
+
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<AppContext,
             MCHub.Data.Migrations.Configuration>("AttachToMdfStoredInAppFolder"));
         }

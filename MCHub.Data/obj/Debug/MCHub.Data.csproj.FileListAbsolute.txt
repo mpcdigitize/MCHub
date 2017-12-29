@@ -12,3 +12,17 @@ h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Dat
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.dll
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.pdb
 h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csprojResolveAssemblyReference.cache
+\\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\App_Data\MCHubDatabase.mdf
+\\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\App_Data\MCHubDatabase_log.ldf
+\\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\MCHub.Data.dll.config
+\\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\MCHub.Data.dll
+\\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\MCHub.Data.pdb
+\\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\EntityFramework.dll
+\\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\EntityFramework.SqlServer.dll
+\\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\EntityFramework.xml
+\\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\bin\Debug\EntityFramework.SqlServer.xml
+\\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csprojResolveAssemblyReference.cache
+\\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.Migrations.initial.resources
+\\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csproj.GenerateResource.Cache
+\\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.dll
+\\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.pdb

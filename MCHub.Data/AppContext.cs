@@ -23,11 +23,12 @@ namespace WMCHub.Data
             var appName = moduleName.Substring(0, position);
         
         var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string relative = @"..\..\App_Data\";
+            //string relative = @"..\..\" + appName + @"\" + appName + @".Data" + @"\App_Data\";
+           string relative = @"..\..\MCHub\MCHub.Data\App_Data\";
             string absolute = Path.GetFullPath(Path.Combine(baseDirectory, relative));
             AppDomain.CurrentDomain.SetData("DataDirectory", absolute);
 
-            Console.WriteLine(appName + relative);
+           // Console.WriteLine(relative);
 
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<AppContext,
             MCHub.Data.Migrations.Configuration>("AttachToMdfStoredInAppFolder"));

@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,17 +19,11 @@ namespace WMCHub.Data
 
         public AppContext() : base("name=AttachToMdfStoredInAppFolder")
         {
-            var moduleName = Path.GetFileName(Process.GetCurrentProcess().MainModule.FileName);
-            var position = moduleName.IndexOf(".");
-            var appName = moduleName.Substring(0, position);
-        
-        var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            //string relative = @"..\..\" + appName + @"\" + appName + @".Data" + @"\App_Data\";
+             
+           var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
            string relative = @"..\..\MCHub\MCHub.Data\App_Data\";
-            string absolute = Path.GetFullPath(Path.Combine(baseDirectory, relative));
-            AppDomain.CurrentDomain.SetData("DataDirectory", absolute);
-
-           // Console.WriteLine(relative);
+           string absolute = Path.GetFullPath(Path.Combine(baseDirectory, relative));
+           AppDomain.CurrentDomain.SetData("DataDirectory", absolute);
 
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<AppContext,
             MCHub.Data.Migrations.Configuration>("AttachToMdfStoredInAppFolder"));

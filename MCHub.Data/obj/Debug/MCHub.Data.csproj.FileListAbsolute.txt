@@ -26,3 +26,17 @@ h:\my documents\visual studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Dat
 \\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csproj.GenerateResource.Cache
 \\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.dll
 \\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MCHub.Data\obj\Debug\MCHub.Data.pdb
+C:\github\MCHub\MCHub.Data\bin\Debug\App_Data\MCHubDatabase.mdf
+C:\github\MCHub\MCHub.Data\bin\Debug\App_Data\MCHubDatabase_log.ldf
+C:\github\MCHub\MCHub.Data\bin\Debug\MCHub.Data.dll.config
+C:\github\MCHub\MCHub.Data\bin\Debug\MCHub.Data.dll
+C:\github\MCHub\MCHub.Data\bin\Debug\MCHub.Data.pdb
+C:\github\MCHub\MCHub.Data\bin\Debug\EntityFramework.dll
+C:\github\MCHub\MCHub.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\github\MCHub\MCHub.Data\bin\Debug\EntityFramework.xml
+C:\github\MCHub\MCHub.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csprojResolveAssemblyReference.cache
+C:\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.Migrations.initial.resources
+C:\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csproj.GenerateResource.Cache
+C:\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.dll
+C:\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.pdb

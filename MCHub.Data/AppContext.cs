@@ -14,8 +14,8 @@ namespace WMCHub.Data
 {
     public class AppContext : DbContext
     {
+        //Update-database -TargetMigration:0 
 
-       
 
         public AppContext() : base("name=AttachToMdfStoredInAppFolder")
         {

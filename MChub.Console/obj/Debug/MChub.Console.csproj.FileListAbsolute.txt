@@ -33,3 +33,16 @@ h:\my documents\visual studio 2015\Projects\MCHub\MChub.Console\obj\Debug\MCHub.
 \\TOWER\github\MCHub\MChub.Console\bin\Debug\MChub.Console.exe.config
 \\TOWER\github\MCHub\MChub.Console\obj\Debug\MChub.Console.exe
 \\TOWER\github\MCHub\MChub.Console\obj\Debug\MChub.Console.pdb
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\App_Data\MCHubDatabase.mdf
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\App_Data\MCHubDatabase_log.ldf
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\MChub.Console.exe
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\MChub.Console.pdb
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\EntityFramework.dll
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\EntityFramework.SqlServer.dll
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\MCHub.Data.dll
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\MCHub.dll
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\MCHub.Data.pdb
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\MCHub.pdb
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\EntityFramework.xml
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\EntityFramework.SqlServer.xml
+\\TOWER\github\MCHub\MChub.Console\obj\Debug\MCHub.Console.csprojResolveAssemblyReference.cache

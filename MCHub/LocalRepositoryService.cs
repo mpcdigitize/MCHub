@@ -11,8 +11,8 @@ namespace MCHub
     public class LocalRepositoryService
     {
         private const string searchPattern = "*.wtv";
-        private IEnumerable<string> _newFiles;
-
+      //  private IEnumerable<string> _newFiles;
+         
         private ILocalRepository _localRepository;
         private IParseWtvMetadataFromFile _metadataFromFile;
  
@@ -63,7 +63,7 @@ namespace MCHub
 
                 var mediaItem = new MCHub.Data.Model.MediaItem()
                 {
-                    MediaItemId = recording.WtvRecordingId,
+                    MediaItemId = Guid.NewGuid(),
                     FileName = recording.FileName,
                     FilePath = recording.FilePath
 
@@ -77,7 +77,7 @@ namespace MCHub
                     Duration = recording.Length,
                     DateCreated = recording.DateCreated,
 
-                    MediaItemId = recording.WtvRecordingId,
+                    MediaItemId = mediaItem.MediaItemId,
                 };
 
 
@@ -92,7 +92,7 @@ namespace MCHub
                     IsRerun = recording.Rerun,
                     IsProtected = recording.ProtectedRecording,
 
-                    MediaItemId = recording.WtvRecordingId
+                    MediaItemId = mediaItem.MediaItemId,
 
 
                 };
@@ -106,7 +106,7 @@ namespace MCHub
                     Description = recording.ProgramDescription,
                     Genre = recording.Genre,
 
-                    MediaItemId = recording.WtvRecordingId
+                    MediaItemId = mediaItem.MediaItemId,
 
 
                 };

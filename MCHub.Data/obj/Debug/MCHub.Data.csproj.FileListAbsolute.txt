@@ -40,3 +40,17 @@ C:\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.Migrations.initial.resources
 C:\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csproj.GenerateResource.Cache
 C:\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.dll
 C:\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.pdb
+\\TOWER\github\MCHub\MCHub.Data\bin\Debug\App_Data\MCHubDatabase.mdf
+\\TOWER\github\MCHub\MCHub.Data\bin\Debug\App_Data\MCHubDatabase_log.ldf
+\\TOWER\github\MCHub\MCHub.Data\bin\Debug\MCHub.Data.dll.config
+\\TOWER\github\MCHub\MCHub.Data\bin\Debug\MCHub.Data.dll
+\\TOWER\github\MCHub\MCHub.Data\bin\Debug\MCHub.Data.pdb
+\\TOWER\github\MCHub\MCHub.Data\bin\Debug\EntityFramework.dll
+\\TOWER\github\MCHub\MCHub.Data\bin\Debug\EntityFramework.SqlServer.dll
+\\TOWER\github\MCHub\MCHub.Data\bin\Debug\EntityFramework.xml
+\\TOWER\github\MCHub\MCHub.Data\bin\Debug\EntityFramework.SqlServer.xml
+\\TOWER\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csprojResolveAssemblyReference.cache
+\\TOWER\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.Migrations.initial.resources
+\\TOWER\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csproj.GenerateResource.Cache
+\\TOWER\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.dll
+\\TOWER\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.pdb

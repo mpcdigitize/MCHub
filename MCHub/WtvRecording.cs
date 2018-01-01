@@ -9,8 +9,8 @@ namespace MCHub
 {
     public class WtvRecording 
     {
-       [Key]
-        public Guid WtvRecordingId { get; set; }
+       //[Key]
+        //public Guid WtvRecordingId { get; set; }
         public string Size { get; set; }
         public string DateModified { get; set; }
         public string DateCreated { get; set; }

@@ -20,10 +20,10 @@ namespace WMCHub.Data
         public AppContext() : base("name=AttachToMdfStoredInAppFolder")
         {
              
-           var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-           string relative = @"..\..\MCHub\MCHub.Data\App_Data\";
-           string absolute = Path.GetFullPath(Path.Combine(baseDirectory, relative));
-           AppDomain.CurrentDomain.SetData("DataDirectory", absolute);
+           //var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+           //string relative = @"..\..\MCHub\MCHub.Data\App_Data\";
+           //string absolute = Path.GetFullPath(Path.Combine(baseDirectory, relative));
+           //AppDomain.CurrentDomain.SetData("DataDirectory", absolute);
 
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<AppContext,
             MCHub.Data.Migrations.Configuration>("AttachToMdfStoredInAppFolder"));

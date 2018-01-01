@@ -67,6 +67,8 @@ namespace MCHub
                     FileName = recording.FileName,
                     FilePath = recording.FilePath
 
+                  
+
                 };
 
 
@@ -110,6 +112,20 @@ namespace MCHub
 
 
                 };
+
+                var metadataItemView = new MCHub.Data.Model.MetadataItemView()
+                {
+                    MetadataItemViewId = Guid.NewGuid(),
+                    MediaItemId = mediaItem.MediaItemId
+
+                };
+
+
+
+                mediaItem.MediaItemDetail = mediaItemDetail;
+                mediaItem.MetadataItem = metadataItem;
+                mediaItem.MetadataItemView = metadataItemView;
+                mediaItem.RecordingDetail = recordingDetail;
 
                 context.MediaItems.Add(mediaItem);
                 context.MetadataItems.Add(metadataItem);

@@ -30,3 +30,6 @@ h:\my documents\visual studio 2015\Projects\MCHub\MChub.Console\obj\Debug\MCHub.
 \\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MChub.Console\bin\Debug\EntityFramework.xml
 \\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MChub.Console\bin\Debug\EntityFramework.SqlServer.xml
 \\TOWER\VisualStudio\Visual Studio 2015\Projects\MCHub\MChub.Console\obj\Debug\MCHub.Console.csprojResolveAssemblyReference.cache
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\MChub.Console.exe.config
+\\TOWER\github\MCHub\MChub.Console\obj\Debug\MChub.Console.exe
+\\TOWER\github\MCHub\MChub.Console\obj\Debug\MChub.Console.pdb

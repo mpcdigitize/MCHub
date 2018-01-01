@@ -57,7 +57,7 @@ namespace MCHub
             FolderItem folderItem = shellReader.GetShellFolderItem(filePath);
 
             WtvRecording recording = new WtvRecording() {
-                WtvRecordingId = Guid.NewGuid(),
+               
                 Size = folder.GetDetailsOf(folderItem, ordinal.Size).SanitizeString(),
                 DateModified = folder.GetDetailsOf(folderItem, ordinal.DateModified).SanitizeString(),
                 PerceivedType = folder.GetDetailsOf(folderItem, ordinal.PerceivedType).SanitizeString(),

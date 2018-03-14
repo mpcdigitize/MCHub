@@ -313,6 +313,16 @@ namespace MCHub
                                      
             return recordings;
         }
+        
+         public static IEnumerable<Recording> FixTags(this IEnumerable<Recording> files)
+        {
+            
+             var fixedRecordings = files;
+             
+            return fixedrecordings;
+
+        }
+
 
 
 

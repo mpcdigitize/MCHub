@@ -194,6 +194,90 @@ namespace MCHub
            
 
         }
+        
+        public static void SaveToDatabase(this IEnumerable<WtvRecording> recordings)
+        {
+
+            var context = new AppContext();
+
+            foreach (var recording in recordings)
+            {
+
+                var mediaItem = new MCHub.Data.Model.MediaItem()
+                {
+                    MediaItemId = Guid.NewGuid(),
+                    FileName = recording.FileName,
+                    FilePath = recording.FilePath
+
+                  
+
+                };
+
+
+                var mediaItemDetail = new MCHub.Data.Model.MediaItemDetail()
+                {
+                    MediaItemDetailId = Guid.NewGuid(),
+                    Size = recording.Size,
+                    Duration = recording.Length,
+                    DateCreated = recording.DateCreated,
+
+                    MediaItemId = mediaItem.MediaItemId,
+                };
+
+
+                var recordingDetail = new MCHub.Data.Model.RecordingDetail()
+                {
+                    RecordingDetailId = Guid.NewGuid(),
+                    DateReleased  = recording.DateReleased,
+                    ChannelNumber = recording.ChannelNumber,
+                    StationName = recording.StationName,
+                    StationCallSign = recording.StationCallSign,
+                    RecordingTime = recording.RecordingTime,
+                    IsRerun = recording.Rerun,
+                    IsProtected = recording.ProtectedRecording,
+
+                    MediaItemId = mediaItem.MediaItemId,
+
+
+                };
+
+
+                var metadataItem = new MCHub.Data.Model.MetadataItem()
+                {
+                    MetadataItemId = Guid.NewGuid(),
+                    Title = recording.Title,
+                    TitleSort = recording.Title,
+                    Description = recording.ProgramDescription,
+                    Genre = recording.Genre,
+
+                    MediaItemId = mediaItem.MediaItemId,
+
+
+                };
+
+                var metadataItemView = new MCHub.Data.Model.MetadataItemView()
+                {
+                    MetadataItemViewId = Guid.NewGuid(),
+                    MediaItemId = mediaItem.MediaItemId
+
+                };
+
+
+
+                mediaItem.MediaItemDetail = mediaItemDetail;
+                mediaItem.MetadataItem = metadataItem;
+                mediaItem.MetadataItemView = metadataItemView;
+                mediaItem.RecordingDetail = recordingDetail;
+
+                context.MediaItems.Add(mediaItem);
+                context.MetadataItems.Add(metadataItem);
+                context.MediaItemDetails.Add(mediaItemDetail);
+                context.RecordingDetails.Add(recordingDetail);
+                context.SaveChanges();
+            }
+
+        }
+
 
     }
 }

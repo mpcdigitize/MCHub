@@ -11,43 +11,27 @@ namespace MCHub
     public class DirectorySearcher
     {
         private const string searchPattern = "*.wtv";
-      //  private IEnumerable<string> _newFiles;
+        private IEnumerable<string> _files;
          
-        private ILocalRepository _localRepository;
-        private IParseWtvMetadataFromFile _metadataFromFile;
- 
+       
 
-
-
-        public LocalRepositoryService(ILocalRepository repo,
-                                      IParseWtvMetadataFromFile metadataFromFile)
+        public DirectorySearcher()
         {
-
-            _localRepository = repo;
-            _metadataFromFile = metadataFromFile;
-
+            _files = new List<Recording>;
+            
         }
 
 
-        public IEnumerable<WtvRecording> ScanFolder(string folderPath)
+        public IEnumerable<Recording> ScanFolder(string folderPath)
         {
+            
+            _files = folderPath.GetAllFiles(searchPattern)
+                    .FindNewRecordings()
+                    .ParseMetadata()
+                    .FixTags()
+                             
 
-            IEnumerable<WtvRecording> list = new List<WtvRecording>();
-
-            var files = this._localRepository.GetAllFiles(folderPath, searchPattern);
-
-            var newRecordings = files.GetNewRecordings();
-
-            if (!newRecordings.IsNullOrEmpty())
-            {
-
-                list = this._metadataFromFile.ParseFolder(newRecordings);
-     
-                }   
-
-                     
-
-            return list;
+            return _files;
 
           
         }

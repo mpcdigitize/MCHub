@@ -8,7 +8,7 @@ using WMCHub.Data;
 
 namespace MCHub
 {
-    public class LocalRepositoryService
+    public class DirectorySearcher
     {
         private const string searchPattern = "*.wtv";
       //  private IEnumerable<string> _newFiles;

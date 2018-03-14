@@ -9,6 +9,8 @@ namespace MCHub
 {
     public class ShellParser : IParseWtvMetadataFromFile
     {
+    
+        /*
 
         private ShellReader _reader;
         private Dictionary<int, string> _headers;
@@ -35,7 +37,7 @@ namespace MCHub
 
 
       
-
+    */
        
 
     }

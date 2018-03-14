@@ -10,6 +10,30 @@ namespace MCHub
 {
     public static class Extensions
     {
+        
+        public IEnumerable<string> GetAllFiles(this string path, string searchPattern)
+        {
+
+            this._files = new List<string>();
+
+
+            try
+            {
+                _files = Directory.GetFiles(path, searchPattern, SearchOption.AllDirectories).ToList();
+
+
+            }
+
+            catch (Exception e)
+            {
+                Console.WriteLine("An error occurred: '{0}'", e.Message);
+            }
+
+            return _files;
+
+
+        }
+
 
 
         public static string GetFirstFile(this IEnumerable<string> files)

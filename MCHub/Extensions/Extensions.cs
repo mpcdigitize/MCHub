@@ -301,6 +301,19 @@ namespace MCHub
             }
 
         }
+        
+         public IEnumerable<Recording> ParseMetadata(this IEnumerable<string> files)
+        {
+            var ordinal = new Ordinal();
+            var shellReader = new SheelReader();
+             
+            ordinal = shellReader.GetFileHeaders(files.GetFirstFile()).PopulateOrdinals();
+
+            var recordings = files.Select(p => p.GetHeaderValues(this._ordinal));
+                                     
+            return recordings;
+        }
+
 
 
     }

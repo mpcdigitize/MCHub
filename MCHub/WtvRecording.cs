@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MCHub
 {
-    public class WtvRecording 
+    public class Recording 
     {
        //[Key]
         //public Guid WtvRecordingId { get; set; }

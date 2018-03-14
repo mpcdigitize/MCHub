@@ -11,7 +11,7 @@ namespace MCHub
 {
     public class Repository : ILocalRepository
     {
-        private List<string> _files;
+       // private List<string> _files;
 
 
 
@@ -22,6 +22,8 @@ namespace MCHub
         /// <param name="path"></param>
         /// <param name="searchPattern"></param>
         /// <returns></returns>
+        
+        /*
         public IEnumerable<string> GetAllFiles(string path, string searchPattern)
         {
 
@@ -44,6 +46,7 @@ namespace MCHub
 
 
         }
+        */
 
 
 

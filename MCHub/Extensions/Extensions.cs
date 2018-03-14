@@ -14,12 +14,12 @@ namespace MCHub
         public IEnumerable<string> GetAllFiles(this string path, string searchPattern)
         {
 
-            this._files = new List<string>();
+            var files = new List<string>();
 
 
             try
             {
-                _files = Directory.GetFiles(path, searchPattern, SearchOption.AllDirectories).ToList();
+                files = Directory.GetFiles(path, searchPattern, SearchOption.AllDirectories).ToList();
 
 
             }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MCHub
 {
-    public class Repository : ILocalRepository
+    public class Repository
     {
        // private List<string> _files;
 

@@ -58,7 +58,7 @@ namespace MCHub
         }
 
 
-        public static IEnumerable<string> GetNewRecordings(this IEnumerable<string> files)
+        public static IEnumerable<string> FindNewRecordings(this IEnumerable<string> files)
         {
             var context = new AppContext();
 

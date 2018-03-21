@@ -53,7 +53,7 @@
     <Compile Include="Extensions\Extensions.cs" />
     <Compile Include="Interfaces\ILocalRepository.cs" />
     <Compile Include="Interfaces\IParseWtvMetadataFromFile.cs" />
-    <Compile Include="LocalRepositoryService.cs" />
+    <Compile Include="DirectorySearcher.cs" />
     <Compile Include="Model\MediaItem.cs" />
     <Compile Include="Model\MediaItemDetail.cs" />
     <Compile Include="Model\MetadataItem.cs" />

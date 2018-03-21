@@ -7,7 +7,7 @@ using Shell32;
 
 namespace MCHub
 {
-    public class ShellParser : IParseWtvMetadataFromFile
+    public class ShellParser 
     {
     
         /*

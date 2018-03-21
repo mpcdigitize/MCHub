@@ -39,6 +39,9 @@ namespace MCHub
         public string StationCallSign { get; set; }
         public string StationName { get; set; }
         public string IsMovie { get; set;}
+        public string Thumbnail { get; set;}
+        public string SeasonNumber { get; set;}
+        public string EpisodeNumber { get; set;}
         
         
 

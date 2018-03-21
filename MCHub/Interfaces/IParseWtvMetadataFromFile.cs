@@ -10,7 +10,7 @@ namespace MCHub
     {
 
         //WtvRecording ParseFile(string filePath);
-        IEnumerable<WtvRecording> ParseFolder(IEnumerable<string> files);
+        IEnumerable<Recording> ParseFolder(IEnumerable<string> files);
 
        
     }

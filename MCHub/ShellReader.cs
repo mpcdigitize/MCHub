@@ -17,10 +17,11 @@ namespace MCHub
 
         public Folder GetShellFolderObject(string filePath)
         {
-            Type shellAppType = Type.GetTypeFromProgID("Shell.Application");
-            Object shell = Activator.CreateInstance(shellAppType);
-            Folder folder = (Folder)shellAppType.InvokeMember("NameSpace",
-                System.Reflection.BindingFlags.InvokeMethod, null, shell, new[] { System.IO.Directory.GetParent(filePath).FullName });
+           
+                Type shellAppType = Type.GetTypeFromProgID("Shell.Application");
+                Object shell = Activator.CreateInstance(shellAppType);
+                Folder folder = (Folder)shellAppType.InvokeMember("NameSpace",
+                    System.Reflection.BindingFlags.InvokeMethod, null, shell, new[] { System.IO.Directory.GetParent(filePath).FullName });
 
             return folder;
         }

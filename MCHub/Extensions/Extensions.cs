@@ -316,12 +316,71 @@ namespace MCHub
             return recordings;
         }
         
-         public static IEnumerable<Recording> FixTags(this IEnumerable<Recording> files)
+         public static IEnumerable<Recording> FixMetadataTags(this IEnumerable<Recording> recordings)
         {
+
+            var rec1 = recordings.Where(r => r.DateReleased != "0")
+                                   .Select(r => new Recording {
+                                       Title = r.Title,
+                                       DateReleased = r.DateReleased,
+                                       BroadcastDate = r.RecordingTime,
+                                       ProgramDescription = r.ProgramDescription,
+                                       RecordingTime = r.RecordingTime
+                                   });
+
+            var rec2 = recordings.Where(r => (r.DateReleased == "0" && r.BroadcastDate !="0"))
+                                  .Select(r => new Recording
+                                  {
+                                      Title = r.Title,
+                                      DateReleased = r.BroadcastDate?.ParseYear(),
+                                      BroadcastDate = r.BroadcastDate,
+                                      ProgramDescription = r.ProgramDescription,
+                                      RecordingTime = r.RecordingTime
+                                  });
+
+
+            //var rec3 = recordings.Where(r => r.DateReleased == "0" && r.BroadcastDate == "0")
+            //                   .Select(r => new Recording
+            //                   {
+            //                       Title = r.Title,
+            //                       DateReleased = r.RecordingTime?.ParseYear(),
+            //                       BroadcastDate = r.BroadcastDate,
+            //                       ProgramDescription = r.ProgramDescription,
+            //                       RecordingTime = r.RecordingTime
+            //                   });
+
+
+            var recs = rec1.Concat(rec2);
+                           // .Concat(rec3);
+
             
-             var fixedRecordings = files;
-             
-            return fixedRecordings;
+
+             return recs;
+
+        }
+
+
+        public static double ParseTotalSeconds(this string time)
+        {
+            double totalSeconds = 0;
+
+            TimeSpan result;
+
+            if (TimeSpan.TryParse(time, out result))
+            {
+                totalSeconds = result.TotalSeconds;
+            }
+            return totalSeconds;
+
+
+        }
+
+        public static string ParseYear(this string time)
+        {
+            var year = DateTime.Parse(time).Year.ToString();
+            
+            return year;
+
 
         }
 

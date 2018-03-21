@@ -15,8 +15,8 @@ namespace MCHub
 
             var searcher = new DirectorySearcher();
 
-           var files = searcher.ScanFolder(@"C:\RecordedTV");
-         //   var files = searcher.ScanFolder(@"\\Htpc\d\Recorded TV");
+         //  var files = searcher.ScanFolder(@"C:\RecordedTV");
+         var files = searcher.ScanFolder(@"\\Htpc\d\Recorded TV");
             //var files = searcher.ScanFolder(@"\\TOWER\Media\Video\TV Soccer");
             //var context = new AppContext();
 
@@ -37,12 +37,18 @@ namespace MCHub
             foreach (var item in files)
             {
 
-                Console.WriteLine("Output: {0} \t\n \t\n BrodcastDate: {1} \n RecordingTime: {2} \n EpisodeName: {3}\n Length: {4}\n FileName: {5}\n FilePath: {6}\n Genre: {7}\n ProtectedRec: {8}\n Rerun: {9}\n Size: {10}\n StationCallSign {11}\n StationName {12}\n Subtitle {13} \n Description {14}",
-                                                    item.Title,
-                                                    item.BroadcastDate, item.RecordingTime, item.EpisodeName,
-                                                    item.Length, item.FileName, item.FilePath, item.Genre, item.ProtectedRecording,
-                                                    item.Rerun, item.Size, item.StationCallSign, item.StationName, item.Subtitle, item.ProgramDescription
-                                                    );
+                //Console.WriteLine("Title: {0} \t\n \t\n BrodcastDate: {1} \n RecordingTime: {2} \n EpisodeName: {3}\n Length: {4}\n FileName: {5}\n FilePath: {6}\n Genre: {7}\n ProtectedRec: {8}\n Rerun: {9}\n Size: {10}\n StationCallSign {11}\n StationName {12}\n Subtitle {13} \n Description {14}",
+                //                                    item.Title,
+                //                                    item.BroadcastDate, item.RecordingTime, item.EpisodeName,
+                //                                    item.Length, item.FileName, item.FilePath, item.Genre, item.ProtectedRecording,
+                //                                    item.Rerun, item.Size, item.StationCallSign, item.StationName, item.Subtitle, item.ProgramDescription
+                //                                    );
+
+                Console.WriteLine("Title: {0} \t\n \t\n BrodcastDate: {1} \n DateReleased: {2} \n Description: {3} \n RecordingTime: {4}",
+                                                  item.Title,
+                                                  item.BroadcastDate, item.DateReleased, item.ProgramDescription, item.RecordingTime
+                                                  );
+
 
 
                 //  context.WtvRecordings.Add(item);

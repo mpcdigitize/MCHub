@@ -64,7 +64,7 @@
     <Compile Include="Repository.cs" />
     <Compile Include="ShellParser.cs" />
     <Compile Include="ShellReader.cs" />
-    <Compile Include="WtvRecording.cs" />
+    <Compile Include="Recording.cs" />
     <Compile Include="WtvRecordingBase.cs" />
   </ItemGroup>
   <ItemGroup>

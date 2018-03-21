@@ -1,6 +1,7 @@
 ﻿using Shell32;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace MCHub
     public static class Extensions
     {
         
-        public IEnumerable<string> GetAllFiles(this string path, string searchPattern)
+        public static IEnumerable<string> GetAllFiles(this string path, string searchPattern)
         {
 
             var files = new List<string>();
@@ -29,7 +30,7 @@ namespace MCHub
                 Console.WriteLine("An error occurred: '{0}'", e.Message);
             }
 
-            return _files;
+            return files;
 
 
         }
@@ -71,7 +72,7 @@ namespace MCHub
         }
 
 
-        public static WtvRecording GetHeaderValues(this string filePath, Ordinal ordinal)
+        public static Recording GetHeaderValues(this string filePath, Ordinal ordinal)
         {
 
             ShellReader shellReader = new ShellReader();
@@ -80,7 +81,7 @@ namespace MCHub
             Folder folder = shellReader.GetShellFolderObject(filePath);
             FolderItem folderItem = shellReader.GetShellFolderItem(filePath);
 
-            WtvRecording recording = new WtvRecording() {
+            Recording recording = new Recording() {
                
                 Size = folder.GetDetailsOf(folderItem, ordinal.Size).SanitizeString(),
                 DateModified = folder.GetDetailsOf(folderItem, ordinal.DateModified).SanitizeString(),
@@ -219,7 +220,7 @@ namespace MCHub
 
         }
         
-        public static void SaveToDatabase(this IEnumerable<WtvRecording> recordings)
+        public static void SaveToDatabase(this IEnumerable<Recording> recordings)
         {
 
             var context = new AppContext();
@@ -302,14 +303,14 @@ namespace MCHub
 
         }
         
-         public IEnumerable<Recording> ParseMetadata(this IEnumerable<string> files)
+         public static IEnumerable<Recording> ParseMetadata(this IEnumerable<string> files)
         {
             var ordinal = new Ordinal();
-            var shellReader = new SheelReader();
+            var shellReader = new ShellReader();
              
             ordinal = shellReader.GetFileHeaders(files.GetFirstFile()).PopulateOrdinals();
 
-            var recordings = files.Select(p => p.GetHeaderValues(this._ordinal));
+            var recordings = files.Select(p => p.GetHeaderValues(ordinal));
                                      
             return recordings;
         }
@@ -319,7 +320,7 @@ namespace MCHub
             
              var fixedRecordings = files;
              
-            return fixedrecordings;
+            return fixedRecordings;
 
         }
 

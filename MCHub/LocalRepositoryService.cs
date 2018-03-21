@@ -11,24 +11,24 @@ namespace MCHub
     public class DirectorySearcher
     {
         private const string searchPattern = "*.wtv";
-        private IEnumerable<string> _files;
+        private IEnumerable<Recording> _files;
          
        
 
         public DirectorySearcher()
         {
-            _files = new List<Recording>;
+            _files = new List<Recording>();
             
         }
 
 
         public IEnumerable<Recording> ScanFolder(string folderPath)
         {
-            
+
             _files = folderPath.GetAllFiles(searchPattern)
                     .FindNewRecordings()
                     .ParseMetadata()
-                    .FixTags()
+                    .FixTags();
                              
 
             return _files;

@@ -1,6 +1,7 @@
 ﻿using Shell32;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -415,10 +416,28 @@ namespace MCHub
 
         public static string ParseYear(this string time)
         {
-            var year = DateTime.TryParse(time).Year.ToString();
-            
-            return year;
+            CultureInfo culture;
+            DateTimeStyles styles;
+            DateTime dateResult;
+            string year = "";
 
+            styles = DateTimeStyles.AssumeLocal;
+       
+            culture = CultureInfo.CurrentCulture;
+
+            if (DateTime.TryParse(time, culture, styles, out dateResult))
+            {
+       
+                year = dateResult.Year.ToString();
+
+            }
+            else
+            { 
+       
+                year = time;
+            }
+
+            return year;
 
         }
 

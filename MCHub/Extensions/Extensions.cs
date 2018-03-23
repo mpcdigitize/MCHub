@@ -315,8 +315,46 @@ namespace MCHub
                                      
             return recordings;
         }
-        
-         public static IEnumerable<Recording> FixMetadataTags(this IEnumerable<Recording> recordings)
+
+
+        public static IEnumerable<Recording> GetRaplacement(this IEnumerable<Recording> recordings)
+        {
+
+            var result = recordings.Select(r => new Recording {
+                                        Title = r.Title,
+                                        DateReleased = r.DateReleased.ChangeTo(r.BroadcastDate).ChangeTo(r.RecordingTime).ParseYear(),
+                                        BroadcastDate = r.BroadcastDate,
+                                        ProgramDescription = r.ProgramDescription,
+                                        RecordingTime = r.RecordingTime
+
+            });
+
+           return result;
+
+        }
+
+        public static string ChangeTo(this string input, string replacement )
+        {
+            string result="";
+
+            if (String.IsNullOrEmpty(input) || input == "0")
+            {
+                result = replacement;
+
+            }
+
+            else
+            {
+
+                result = input;
+            }
+
+            return result;
+            
+            
+        }
+
+        public static IEnumerable<Recording> FixMetadataTags(this IEnumerable<Recording> recordings)
         {
 
             var rec1 = recordings.Where(r => r.DateReleased != "0")
@@ -377,7 +415,7 @@ namespace MCHub
 
         public static string ParseYear(this string time)
         {
-            var year = DateTime.Parse(time).Year.ToString();
+            var year = DateTime.TryParse(time).Year.ToString();
             
             return year;
 

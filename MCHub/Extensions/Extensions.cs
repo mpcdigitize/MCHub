@@ -324,9 +324,11 @@ namespace MCHub
             var result = recordings.Select(r => new Recording {
                                         Title = r.Title,
                                         DateReleased = r.DateReleased.ChangeTo(r.BroadcastDate).ChangeTo(r.RecordingTime).ParseYear(),
-                                        BroadcastDate = r.BroadcastDate,
+                                        BroadcastDate = r.BroadcastDate.ChangeTo(r.RecordingTime),
                                         ProgramDescription = r.ProgramDescription,
-                                        RecordingTime = r.RecordingTime
+                                        RecordingTime = r.RecordingTime,
+                                        Length = r.Length,
+
 
             });
 

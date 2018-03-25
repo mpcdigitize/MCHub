@@ -347,9 +347,9 @@ namespace MCHub
                 ParentalRatingReason = r.ParentalRatingReason,
                 ChannelNumber = r.ChannelNumber,
                 Rerun = r.Rerun,
-                StationCallSign =  r.StationCallSign,
+                StationCallSign = r.StationCallSign,
                 StationName = r.StationName,
-                IsMovie = r.IsMovie,
+                IsMovie = r.Genre.CheckGenre("Movie"),
                 Thumbnail = r.Thumbnail,
                 SeasonNumber = r.SeasonNumber,
                 EpisodeNumber = r.EpisodeNumber
@@ -360,6 +360,29 @@ namespace MCHub
            return result;
 
         }
+
+
+        public static string CheckGenre(this string input, string genre)
+        {
+            string result = "";
+
+            if (String.IsNullOrEmpty(input) || input == "0")
+            {
+                result = "False";
+
+            }
+
+            else
+            {
+
+                result = input.ToUpper().Contains(genre.ToUpper()).ToString();
+            }
+
+            return result;
+
+
+        }
+
 
         public static string ChangeTo(this string input, string replacement )
         {

@@ -325,9 +325,11 @@ namespace MCHub
                                         Title = r.Title,
                                         DateReleased = r.DateReleased.ChangeTo(r.BroadcastDate).ChangeTo(r.RecordingTime).ParseYear(),
                                         BroadcastDate = r.BroadcastDate.ChangeTo(r.RecordingTime),
-                                        ProgramDescription = r.ProgramDescription,
+                                        ProgramDescription = r.ProgramDescription.ChangeTo(r.Title),
                                         RecordingTime = r.RecordingTime,
                                         Length = r.Length.ParseTotalSeconds(),
+                                        Subtitle = r.Subtitle.ChangeTo(r.Title).ChangeTo(r.EpisodeName),
+                                        EpisodeName = r.EpisodeName.ChangeToCustomName(r.RecordingTime)
 
 
             });
@@ -356,6 +358,28 @@ namespace MCHub
             
             
         }
+
+        public static string ChangeToCustomName(this string input, string replacement)
+        {
+            string result = "";
+
+            if (String.IsNullOrEmpty(input) || input == "0")
+            {
+                result = "Episode " + replacement.ParseMonth() + "-" + replacement.ParseDay();
+
+            }
+
+            else
+            {
+
+                result = input;
+            }
+
+            return result;
+
+
+        }
+
 
         public static IEnumerable<Recording> FixMetadataTags(this IEnumerable<Recording> recordings)
         {
@@ -442,6 +466,63 @@ namespace MCHub
             return year;
 
         }
+
+        public static string ParseMonth(this string time)
+        {
+            CultureInfo culture;
+            DateTimeStyles styles;
+            DateTime dateResult;
+            string month = "";
+
+            styles = DateTimeStyles.AssumeLocal;
+
+            culture = CultureInfo.CurrentCulture;
+
+            if (DateTime.TryParse(time, culture, styles, out dateResult))
+            {
+
+                month = dateResult.Month.ToString("00");
+
+            }
+            else
+            {
+
+                month = time;
+            }
+
+            return month;
+
+        }
+
+
+        public static string ParseDay(this string time)
+        {
+            CultureInfo culture;
+            DateTimeStyles styles;
+            DateTime dateResult;
+            string day = "";
+
+            styles = DateTimeStyles.AssumeLocal;
+            
+            culture = CultureInfo.CurrentCulture;
+
+            if (DateTime.TryParse(time, culture, styles, out dateResult))
+            {
+
+                day = dateResult.Day.ToString("00");
+
+            }
+            else
+            {
+
+                day = time;
+            }
+
+            return day;
+
+        }
+
+
 
 
 

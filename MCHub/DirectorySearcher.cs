@@ -28,7 +28,7 @@ namespace MCHub
             _files = folderPath.GetAllFiles(searchPattern)
                     .FindNewRecordings()
                     .ParseMetadata()
-                    .GetRaplacement();
+                    .FixMetadataTags();
                              
 
             return _files;

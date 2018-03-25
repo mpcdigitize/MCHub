@@ -318,7 +318,7 @@ namespace MCHub
         }
 
 
-        public static IEnumerable<Recording> GetRaplacement(this IEnumerable<Recording> recordings)
+        public static IEnumerable<Recording> FixMetadataTags(this IEnumerable<Recording> recordings)
         {
 
             var result = recordings.Select(r => new Recording {
@@ -381,48 +381,7 @@ namespace MCHub
         }
 
 
-        public static IEnumerable<Recording> FixMetadataTags(this IEnumerable<Recording> recordings)
-        {
-
-            var rec1 = recordings.Where(r => r.DateReleased != "0")
-                                   .Select(r => new Recording {
-                                       Title = r.Title,
-                                       DateReleased = r.DateReleased,
-                                       BroadcastDate = r.RecordingTime,
-                                       ProgramDescription = r.ProgramDescription,
-                                       RecordingTime = r.RecordingTime
-                                   });
-
-            var rec2 = recordings.Where(r => (r.DateReleased == "0" && r.BroadcastDate !="0"))
-                                  .Select(r => new Recording
-                                  {
-                                      Title = r.Title,
-                                      DateReleased = r.BroadcastDate?.ParseYear(),
-                                      BroadcastDate = r.BroadcastDate,
-                                      ProgramDescription = r.ProgramDescription,
-                                      RecordingTime = r.RecordingTime
-                                  });
-
-
-            //var rec3 = recordings.Where(r => r.DateReleased == "0" && r.BroadcastDate == "0")
-            //                   .Select(r => new Recording
-            //                   {
-            //                       Title = r.Title,
-            //                       DateReleased = r.RecordingTime?.ParseYear(),
-            //                       BroadcastDate = r.BroadcastDate,
-            //                       ProgramDescription = r.ProgramDescription,
-            //                       RecordingTime = r.RecordingTime
-            //                   });
-
-
-            var recs = rec1.Concat(rec2);
-                           // .Concat(rec3);
-
-            
-
-             return recs;
-
-        }
+       
 
 
         public static string ParseTotalSeconds(this string time)

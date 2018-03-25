@@ -1,4 +1,5 @@
-﻿using Shell32;
+﻿using MpcDigitize.FFmpeg.Net.Wrapper;
+using Shell32;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -489,7 +490,34 @@ namespace MCHub
         }
 
 
+        public static void ExtractThumbnail(this IEnumerable<Recording> recordings)
+        {
 
+            var ffmpeg = new EncodingEngine(@"C:\ffmpeg\ffmpeg.exe");
+            var encodingJob = new EncodingJob();
+            var videoArgs = new VideoArgs();
+
+
+            foreach (var recording in recordings)
+            {
+                var inputFile = recording.FilePath;
+                var outputFile = @"C:\videos\thumbs\" + recording.FileName + ".jpeg";
+
+                int x = Int32.Parse(recording.Length);
+
+                var timeInSeconds = x/3;
+
+                encodingJob.Arguments = videoArgs.GetFrame(inputFile, timeInSeconds, FrameSize.SizeThumbnail,outputFile);
+                  
+
+
+            }
+
+
+
+            var ffmpeg = new 
+
+        }
 
 
 

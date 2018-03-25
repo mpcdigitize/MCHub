@@ -118,37 +118,7 @@ namespace MCHub
         }
 
 
-        //public static string GetMovieYear(this string headerValue, string broadcastDate, string recordingTime)
-        //{
-        //    DateTime _broadcastDate = Convert.ToDateTime(broadcastDate);
-        //    DateTime _recordingTime = Convert.ToDateTime(recordingTime);
-
-
-        //    string result = "";
-
-        //    if (headerValue != "0")
-        //    {
-        //        result = headerValue;
-        //    }
-
-        //    if (headerValue == "0")
-        //    {
-
-        //        if (broadcastDate.ToString().Length > 0)
-        //        {
-        //            result = _broadcastDate.Year.ToString();
-
-        //        }
-
-        //        if (broadcastDate.ToString().Length == 0)
-        //        {
-        //            result = _recordingTime.Year.ToString();
-
-        //        }
-        //    }
-
-        //        return result;
-        //}
+     
 
         public static string GetDuration(this string headerValue)
         {
@@ -171,16 +141,7 @@ namespace MCHub
 
         }
 
-        //public static string GetFileHeaderValue(this string filePath, int ordinal)
-        //{
-        //    ShellReader shellReader = new ShellReader();
-            
-        //    Folder folder = shellReader.GetShellFolderObject(filePath);
-        //    FolderItem folderItem = shellReader.GetShellFolderItem(filePath);
-        //    var header = folder.GetDetailsOf(folderItem, ordinal);
-
-        //    return header;
-        //}
+     
 
         public static Ordinal PopulateOrdinals(this Dictionary<int, string> dictionary)
         {

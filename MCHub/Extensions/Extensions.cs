@@ -327,7 +327,7 @@ namespace MCHub
                                         BroadcastDate = r.BroadcastDate.ChangeTo(r.RecordingTime),
                                         ProgramDescription = r.ProgramDescription,
                                         RecordingTime = r.RecordingTime,
-                                        Length = r.Length,
+                                        Length = r.Length.ParseTotalSeconds(),
 
 
             });
@@ -401,15 +401,15 @@ namespace MCHub
         }
 
 
-        public static double ParseTotalSeconds(this string time)
+        public static string ParseTotalSeconds(this string time)
         {
-            double totalSeconds = 0;
+            string totalSeconds = "0";
 
             TimeSpan result;
 
             if (TimeSpan.TryParse(time, out result))
             {
-                totalSeconds = result.TotalSeconds;
+                totalSeconds = result.TotalSeconds.ToString();
             }
             return totalSeconds;
 

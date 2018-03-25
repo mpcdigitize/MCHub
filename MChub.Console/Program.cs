@@ -44,9 +44,11 @@ namespace MCHub
                 //                                    item.Rerun, item.Size, item.StationCallSign, item.StationName, item.Subtitle, item.ProgramDescription
                 //                                    );
 
-                Console.WriteLine("Title: {0} \t\n \t\n BrodcastDate: {1} \n DateReleased: {2} \n Description: {3} \n RecordingTime: {4} \n Duration: {5} \n Subtitle: {6} \n Episode Name: {7}",
+                Console.WriteLine("Title: {0} \t\n \t\n BrodcastDate: {1} \n DateReleased: {2} \n Description: {3} \n RecordingTime: {4}" +
+                                            " \n Duration: {5} \n Subtitle: {6} \n Episode Name: {7} \n Genre: {8} \n IsMovie: {9} ",
                                                   item.Title,
-                                                  item.BroadcastDate, item.DateReleased, item.ProgramDescription, item.RecordingTime, item.Length, item.Subtitle,item.EpisodeName
+                                                  item.BroadcastDate, item.DateReleased, item.ProgramDescription, item.RecordingTime, item.Length, item.Subtitle,item.EpisodeName,
+                                                  item.Genre, item.IsMovie
                                                   );
 
 

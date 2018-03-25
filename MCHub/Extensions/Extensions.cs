@@ -322,17 +322,40 @@ namespace MCHub
         {
 
             var result = recordings.Select(r => new Recording {
-                                        Title = r.Title,
-                                        DateReleased = r.DateReleased.ChangeTo(r.BroadcastDate).ChangeTo(r.RecordingTime).ParseYear(),
-                                        BroadcastDate = r.BroadcastDate.ChangeTo(r.RecordingTime),
-                                        ProgramDescription = r.ProgramDescription.ChangeTo(r.Title),
-                                        RecordingTime = r.RecordingTime,
-                                        Length = r.Length.ParseTotalSeconds(),
-                                        Subtitle = r.Subtitle.ChangeTo(r.Title).ChangeTo(r.EpisodeName),
-                                        EpisodeName = r.EpisodeName.ChangeToCustomName(r.RecordingTime)
+                Title = r.Title,
+                DateReleased = r.DateReleased.ChangeTo(r.BroadcastDate).ChangeTo(r.RecordingTime).ParseYear(),
+                BroadcastDate = r.BroadcastDate.ChangeTo(r.RecordingTime),
+                ProgramDescription = r.ProgramDescription.ChangeTo(r.Title),
+                RecordingTime = r.RecordingTime,
+                Length = r.Length.ParseTotalSeconds(),
+                Subtitle = r.Subtitle.ChangeTo(r.Title).ChangeTo(r.EpisodeName),
+                EpisodeName = r.EpisodeName.ChangeToCustomName(r.RecordingTime),
+                Size = r.Size,
+                DateModified = r.DateModified,
+                DateCreated = r.DateCreated,
+                DateAccessed = r.DateAccessed,
+                PerceivedType = r.PerceivedType,
+                Genre = r.Genre,
+                Rating = r.Rating,
+                ProtectedRecording = r.ProtectedRecording,
+                FileName = r.FileName,
+                FolderName = r.FolderName,
+                FolderPath = r.FolderPath,
+                FilePath = r.FilePath,
+                TypeRecording = r.TypeRecording,
+                ParentalRating = r.ParentalRating,
+                ParentalRatingReason = r.ParentalRatingReason,
+                ChannelNumber = r.ChannelNumber,
+                Rerun = r.Rerun,
+                StationCallSign =  r.StationCallSign,
+                StationName = r.StationName,
+                IsMovie = r.IsMovie,
+                Thumbnail = r.Thumbnail,
+                SeasonNumber = r.SeasonNumber,
+                EpisodeNumber = r.EpisodeNumber
 
 
-            });
+    });
 
            return result;
 

@@ -15,8 +15,8 @@ namespace MCHub
 
             var searcher = new DirectorySearcher();
 
-           //var files = searcher.ScanFolder(@"C:\RecordedTV");
-         var files = searcher.ScanFolder(@"\\Htpc\d\Recorded TV");
+           var files = searcher.ScanFolder(@"C:\RecordedTV");
+        // var files = searcher.ScanFolder(@"\\Htpc\d\Recorded TV");
             //var files = searcher.ScanFolder(@"\\TOWER\Media\Video\TV Soccer");
             //var context = new AppContext();
 

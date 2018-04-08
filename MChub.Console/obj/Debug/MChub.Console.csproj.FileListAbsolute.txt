@@ -46,3 +46,9 @@ h:\my documents\visual studio 2015\Projects\MCHub\MChub.Console\obj\Debug\MCHub.
 \\TOWER\github\MCHub\MChub.Console\bin\Debug\EntityFramework.xml
 \\TOWER\github\MCHub\MChub.Console\bin\Debug\EntityFramework.SqlServer.xml
 \\TOWER\github\MCHub\MChub.Console\obj\Debug\MCHub.Console.csprojResolveAssemblyReference.cache
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\mpcdigitize.ffmpeg.wrapper.dll
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\MpcDigitize.Wtv.FFprobe.Wrapper.dll
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\Newtonsoft.Json.dll
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\mpcdigitize.ffmpeg.wrapper.pdb
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\MpcDigitize.Wtv.FFprobe.Wrapper.pdb
+\\TOWER\github\MCHub\MChub.Console\bin\Debug\Newtonsoft.Json.xml

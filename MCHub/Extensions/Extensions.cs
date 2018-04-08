@@ -490,7 +490,7 @@ namespace MCHub
         }
 
 
-        public static void ExtractThumbnail(this IEnumerable<Recording> recordings)
+        public static IEnumerable<Recording> ExtractThumbnail(this IEnumerable<Recording> recordings)
         {
 
             var ffmpeg = new EncodingEngine(@"C:\ffmpeg\ffmpeg.exe");
@@ -500,22 +500,26 @@ namespace MCHub
 
             foreach (var recording in recordings)
             {
+
                 var inputFile = recording.FilePath;
-                var outputFile = @"C:\videos\thumbs\" + recording.FileName + ".jpeg";
+                var outputFile = @"C:\videos\thumbs\" + recording.FileName + ".jpg";
 
                 int x = Int32.Parse(recording.Length);
 
                 var timeInSeconds = x/3;
 
+                Console.WriteLine(outputFile);
+                Console.WriteLine(x);
+                Console.WriteLine(timeInSeconds);
                 encodingJob.Arguments = videoArgs.GetFrame(inputFile, timeInSeconds, FrameSize.SizeThumbnail,outputFile);
-                  
 
+                ffmpeg.DoWork(encodingJob);
 
             }
 
 
+            return recordings;
 
-            var ffmpeg = new 
 
         }
 

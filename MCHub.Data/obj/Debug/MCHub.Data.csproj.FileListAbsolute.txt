@@ -54,3 +54,4 @@ C:\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.pdb
 \\TOWER\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.csproj.GenerateResource.Cache
 \\TOWER\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.dll
 \\TOWER\github\MCHub\MCHub.Data\obj\Debug\MCHub.Data.pdb
+\\TOWER\github\MCHub\MCHub.Data\bin\Debug\mpcdigitize.ffmpeg.wrapper.dll

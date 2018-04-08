@@ -63,8 +63,3 @@ C:\github\MCHub\MCHub\obj\Debug\MCHub.pdb
 \\TOWER\github\MCHub\MCHub\obj\Debug\MCHub.dll
 \\TOWER\github\MCHub\MCHub\obj\Debug\MCHub.pdb
 \\TOWER\github\MCHub\MCHub\bin\Debug\mpcdigitize.ffmpeg.wrapper.dll
-\\TOWER\github\MCHub\MCHub\bin\Debug\MpcDigitize.Wtv.FFprobe.Wrapper.dll
-\\TOWER\github\MCHub\MCHub\bin\Debug\Newtonsoft.Json.dll
-\\TOWER\github\MCHub\MCHub\bin\Debug\mpcdigitize.ffmpeg.wrapper.pdb
-\\TOWER\github\MCHub\MCHub\bin\Debug\MpcDigitize.Wtv.FFprobe.Wrapper.pdb
-\\TOWER\github\MCHub\MCHub\bin\Debug\Newtonsoft.Json.xml

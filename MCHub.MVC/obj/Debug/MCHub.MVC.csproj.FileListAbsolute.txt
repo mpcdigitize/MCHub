@@ -222,3 +222,4 @@ C:\github\MCHub\MCHub.MVC\obj\Debug\MCHub.MVC.pdb
 \\TOWER\github\MCHub\MCHub.MVC\obj\Debug\MCHub.MVC.csprojResolveAssemblyReference.cache
 \\TOWER\github\MCHub\MCHub.MVC\obj\Debug\MCHub.MVC.dll
 \\TOWER\github\MCHub\MCHub.MVC\obj\Debug\MCHub.MVC.pdb
+\\TOWER\github\MCHub\MCHub.MVC\bin\mpcdigitize.ffmpeg.wrapper.dll

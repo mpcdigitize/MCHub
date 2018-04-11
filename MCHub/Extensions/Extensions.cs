@@ -312,7 +312,7 @@ namespace MCHub
                 StationCallSign = r.StationCallSign,
                 StationName = r.StationName,
                 IsMovie = r.Genre.CheckGenre("Movie"),
-                Thumbnail = r.Thumbnail,
+                Thumbnail = Guid.NewGuid().ToString(),
                 SeasonNumber = r.SeasonNumber,
                 EpisodeNumber = r.EpisodeNumber
 
@@ -520,6 +520,40 @@ namespace MCHub
 
             return recordings;
 
+
+        }
+
+
+        public static void GetThumb(this Recording recording)
+        {
+            var ffmpeg = new EncodingEngine(@"C:\ffmpeg\ffmpeg.exe");
+            var encodingJob = new EncodingJob();
+            var videoArgs = new VideoArgs();
+
+            var guid = Guid.NewGuid();
+           // var inputFile = recording.FilePath;
+            //var outputFile = @"C:\videos\" + recording.FileName + ".jpg";
+
+
+            //  var inputFile = @"C:\input\testFile.wtv";
+            // var outputFile = @"C:\videos\testConvert_01.mkv";
+
+            var inputFile = @"C:\RecordedTV\Hunter Street_TNCKHD_2018_02_20_16_10_35.wtv";
+            var outputFile = @"C:\output\" + guid + ".mkv";
+
+            int x = Int32.Parse(recording.Length);
+
+            var timeInSeconds = x / 3;
+
+            Console.WriteLine(inputFile);
+            Console.WriteLine(outputFile);
+            Console.WriteLine(x);
+            Console.WriteLine(timeInSeconds);
+          //  encodingJob.Arguments = videoArgs.GetFrame(inputFile, timeInSeconds, FrameSize.SizeThumbnail, outputFile);
+
+           encodingJob.Arguments = videoArgs.Convert(inputFile, VideoEncoder.Libx264, VideoResize.TV720p, VideoPreset.VeryFast, ConstantRateFactor.CrfNormal, AudioCodec.Ac3, outputFile);
+
+            ffmpeg.DoWork(encodingJob);
 
         }
 

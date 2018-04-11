@@ -24,17 +24,29 @@ namespace MCHub
 
         public IEnumerable<Recording> ScanFolder(string folderPath)
         {
+            
 
             _files = folderPath.GetAllFiles(searchPattern)
                     .FindNewRecordings()
                     .ParseMetadata()
-                    .FixMetadataTags()
-                    .ExtractThumbnail();
+                    .FixMetadataTags();
+
+
+            
                              
 
             return _files;
 
           
+        }
+
+        public void ExtractThumbs()
+        {
+            foreach (var item in _files)
+            {
+                item.GetThumb();
+            }
+
         }
 
        

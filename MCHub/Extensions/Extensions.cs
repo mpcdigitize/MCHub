@@ -312,8 +312,8 @@ namespace MCHub
                 StationCallSign = r.StationCallSign,
                 StationName = r.StationName,
                 IsMovie = r.Genre.CheckGenre("Movie"),
-                Thumbnail = Guid.NewGuid().ToString(),
-                SeasonNumber = r.SeasonNumber,
+                Thumbnail = Guid.NewGuid().ToString() + ".jpg",
+                SeasonNumber = r.DateReleased.ChangeTo(r.BroadcastDate).ChangeTo(r.RecordingTime).ParseYear(),
                 EpisodeNumber = r.EpisodeNumber
 
 

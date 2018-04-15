@@ -44,6 +44,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppService.cs" />
+    <Compile Include="Config\DirectoriesSection.cs" />
     <Compile Include="Extensions\Extensions.cs" />
     <Compile Include="Interfaces\ILocalRepository.cs" />
     <Compile Include="Interfaces\IParseWtvMetadataFromFile.cs" />

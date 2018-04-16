@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppService.cs" />
+    <Compile Include="Config\ConfigurationManager.cs" />
     <Compile Include="Config\DirectoriesSection.cs" />
     <Compile Include="Extensions\Extensions.cs" />
     <Compile Include="Interfaces\ILocalRepository.cs" />

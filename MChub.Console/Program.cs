@@ -14,7 +14,8 @@ namespace MCHub
         static void Main(string[] args)
         {
 
-            var loc = ConfigurationManager.GetSection("DirectoriesGroup/Thumbnails");
+            var configManager = new Config.ConfigurationManager();
+            var loc = configManager.Thumbnails;
             Console.WriteLine(loc);
             Console.ReadLine();
 
